@@ -1,0 +1,27 @@
+.accueil__fondation--image{
+    position: absolute;
+    z-index: 1;
+}
+
+.accueil__fondation--texte{
+    position: relative;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+    font-family: var(--font-family);
+    font-style: italic;
+    top: 3px;
+}
+
+.accueil__introduction{
+    position: relative;
+    top: 130px;
+}
+
+.accueil__introduction--design{
+    position: relative;
+    z-index: 3;
+    width: 800px;
+    max-width: 100%;
+}
+
