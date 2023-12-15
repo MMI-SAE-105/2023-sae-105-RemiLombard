@@ -63,6 +63,8 @@
     display: block;
     margin: auto;
     margin-top: 33px;
+    margin-left: 70px;
+    margin-right: 70px;
     text-align: center;
     font-family: var(--font-family);
     font-size: var(-text);
@@ -84,6 +86,8 @@
     display: block;
     margin: auto;
     margin-top: 33px;
+    margin-left: 70px;
+    margin-right: 70px;
     text-align: center;
     font-family: var(--font-family);
     color: var(--white-color);
