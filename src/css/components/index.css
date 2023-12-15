@@ -28,13 +28,13 @@
 
 .accueil__introduction__top{
     display: flex;
+    gap: 20px;
     margin-left: 10px;
     font-family: var(--font-family-2);
     font-size: var(--heading-1);
 }
 
 .accueil__introduction__top--line{
-    margin-left: 20px;
     width: 800px;
     max-width: 100%;
 }
@@ -96,6 +96,32 @@
     cursor: pointer;
     width: 200px;
     }
+
+.vignette{
+    position: relative;
+    top: 140px;
+    z-index: 2;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.vignette__titre{
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+    font-family: var(--font-family-2);
+    font-size: var(--heading-1);
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.vignette__titre--line{
+    width: 800px;
+    max-width: 100%;
+}
 
 
     
