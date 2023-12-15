@@ -9,75 +9,80 @@
     <script defer="" src="https://unpkg.com/alpinejs"></script>
 </head>
 
-    <header>
-
-        <a href="/index.html">
+<header class="header">
+    <div class="header__elements">
+        <a href="/" class="header__elements--home">
             <img src="public/icones/Home.svg" alt="icone accueil">
         </a>
-        <img src="public/icones/L’odyssée d’Ingels.svg" alt="logo du site web">
-        <button>
+        <img src="public/icones/L’odyssée d’Ingels.svg" alt="logo du site web" class="header__elements--logo">
+        <button class="header__elements--menu">
             <img src="public/icones/mingcute_menu-line.svg" alt="icone menu">
         </button>
+    </div>
+</header>
 
-    </header>
-
-    <main>
+    <main class="tarif">
 
         <section>
 
-            <div>
+            <div class="tarif__titre">
                 <img src="public/icones/piece.svg" alt="icone pièce">
                 <h1>Tarifs*</h1>
-                <img src="public/icones/Line 6.svg" alt="ligne décoratrice">
+                <img src="public/icones/Line 6.svg" alt="ligne décoratrice" class="tarif__titre--line">
             </div>
 
-            <div>
+            <div class="tarif__plein">
                 <h2>Plein tarif</h2>
                 <h2>11€</h2>
-                <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
             </div>
+            <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
 
-            <div>
+            <div class="tarif__reduit">
                 <h2>Tarif réduit</h2>
                 <h2>7.50€</h2>
-                <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
             </div>
+            <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
 
-            <div>
+            <div class="tarif__reduction">
                 <h2>Réduction 13-25 ans</h2>
                 <h2>5€</h2>
-                <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
             </div>
+            <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
 
-            <div>
+            <div class="tarif__fondation">
                 <h2>Fondation Cartier Pass</h2>
                 <h2>18-50€</h2>
-                <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
             </div>
+            <img src="public/icones/Line 10.svg" alt="ligne décoratrice">
 
-            <p>*Gratuit pour les moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants</p>
-            <a href="/">Accéder à la billetterie</a>
-
+            <p class="tarif__note">*Gratuit pour les moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants</p>
+            <div class="tarif__btn">
+            <a href="/" class="tarif__btn--btn">Accéder à la billetterie</a>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-
-        <img src="public/icones/L’odyssée d’Ingels.svg" alt="logo du site web">
-        <img src="public/icones/Line 5.svg" alt="ligne décoratrice">
-        <a href="/contact.html">Contact</a>
-        <img src="public/icones/Line 5.svg" alt="ligne décoratrice">
-        <div>
-            <ul>
+    <footer class="footer">
+        <div class="footer__bloc">
+            <img src="public/icones/L’odyssée d’Ingels.svg" alt="logo du site web" class="footer__bloc--logo">
+            <img src="public/icones/Line 5.svg" alt="ligne décoratrice" class="footer__bloc--line1">
+            <div>
+                <a href="/contact.html" class="footer__bloc--contact">Contact</a>
+            </div>
+            <img src="public/icones/Line 5.svg" alt="ligne décoratrice" class="footer__bloc--line2">
+        </div>
+        <div class="footer__liste">
+            <ul class="footer__liste__logos">
                 <li><a href="https://www.instagram.com/fondationcartier/?hl=fr"><img src="public/icones/Insta.svg" alt="logo instagram"></a></li>
                 <li><a href="https://www.youtube.com/user/fondationcartier"><img src="public/icones/Youtube.svg" alt="logo youtube"></a></li>
                 <li><a href="https://twitter.com/Fond_Cartier?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="public/icones/X.svg" alt="logo X"></a></li>
             </ul>
         </div>
-        <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
-        <img src="public/icones/Line 5.svg" alt="ligne décoratrice">
-        <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+        <a href="https://www.fondationcartier.com/" class="footer__logo__fondation"><img src="/public/icones/logo-fondation.webp" alt="logo fondation cartier"></a>
+        <p class="footer__adresse">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <img src="public/icones/Line 5.svg" alt="ligne décoratrice" class="footer__line3">
+        <p class="footer__mention">Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
 
     </footer>
 
