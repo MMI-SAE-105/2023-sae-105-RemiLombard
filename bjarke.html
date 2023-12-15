@@ -67,66 +67,71 @@
 
         </section>
 
-        <section class="bjarke_carrousel">
+        <section class="bjarke__carrousel">
 
             <img src="public/icones/Line 3.svg" alt="ligne décoratrice" class="bjarke__carrousel__line">
             <div class="bjarke__carrousel__titre">
                 <h2 class="bjarke__carrousel__titre--texte">Découvrez les réalisations de Bjarke Ingels par ordre chronologique</h2>
             </div>
 
-            <div class="carrousel" x-data="{}">
-                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-                <div class="carrousel_parent-images">
-                    <div id="image-1" class="carrousel_image">
+            <div class="bjarke__carrousel__carrousel" x-data="{hrefCourant: '#image-1',}">
+                <button @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="bjarke__carrousel__carrousel__btn bjarke__carrousel__carrousel__btn-avant" aria-label="slide précedant"><</button><button @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="bjarke__carrousel__carrousel__btn bjarke__carrousel__carrousel__btn-apres" aria-label="slide suivant">></button>
+                <div class="bjarke__carrousel__carrousel__parent-images" x-ref="parent">
+                        @scroll.debounce.250ms.passive="
+                    hrefCourant = '#'+
+                                    [...$refs.parent.children]
+                                    .find(e=>e.getBoundingClientRect().x>=0)
+                                    .id"> 
+                    <div id="image-1" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image1 - VM Houses (3).webp" alt="photographie de VM Houses">
                             <figcaption>VM Houses, Copenhague, Danemark (2005)</figcaption>
                         </figure>
                     </div>
                     
-                    <div id="image-2" class="carrousel_image">
+                    <div id="image-2" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image6 - Mountain Dwellings (2).webp" alt="photographie de Mountain Dwellings">
                             <figcaption>Mountain Dwellings, Copenhague, Danemark (2008)</figcaption>
                         </figure>
                     </div>
 
-                    <div id="image-3" class="carrousel_image">
+                    <div id="image-3" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image7 - 8 house (2).webp" alt="photographie de 8 House">
                             <figcaption>8 House, Copenhague, Danemark (2010)</figcaption>
                         </figure>
                     </div>
 
-                    <div id="image-4" class="carrousel_image">
+                    <div id="image-4" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image4 - Danish Pavilion (2).webp" alt="photographie de Danish Pavilion">
                             <figcaption>Danish pavilion, Shanghai, China (2010)</figcaption>
                         </figure>
                     </div>
 
-                    <div id="image-5" class="carrousel_image">
+                    <div id="image-5" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/image5 - via 57 west (2).webp" alt="photographie de Via 57 West">
                             <figcaption>VIA 57 West, New York, USA (2016).</figcaption>
                         </figure>
                     </div>
 
-                    <div id="image-6" class="carrousel_image">
+                    <div id="image-6" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image3 - Copenhill (2).webp" alt="photographie de Copenhill">
                             <figcaption>CopenHill, Copenhague, Danemark (2017)</figcaption>
                         </figure>
                     </div>
 
-                    <div id="image-7" class="carrousel_image">
+                    <div id="image-7" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image8 - La Méca (3).webp" alt="photographie de La Méca">
                             <figcaption>La Méca, Bordeaux, France (2019)</figcaption>
                         </figure>
                     </div>
 
-                    <div id="image-8" class="carrousel_image">
+                    <div id="image-8" class="bjarke__carrousel__carrousel__image">
                         <figure>
                             <img src="public/img/Image2 - The twist museum (2).webp" alt="photograpphie de The Twist Museum">
                             <figcaption>The Twist, Oslo, Norvège (2019)</figcaption>

@@ -172,3 +172,69 @@
     margin-right: 10px;
     margin-top: 30px;
 }
+
+
+figcaption {
+    color: var(--black-color);
+}
+
+.bjarke__carrousel{
+    padding-bottom: 100px;
+}
+
+.bjarke__carrousel__carrousel{
+    padding-top: 30px;
+}
+.bjarke__carrousel__carrousel__parent-images {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.bjarke__carrousel__carrousel__image {
+    width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.bjarke__carrousel__carrousel__image img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bjarke__carrousel__carrousel__image figure {
+    margin: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bjarke__carrousel__carrousel {
+    position: relative;
+}
+
+.bjarke__carrousel__carrousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background: var(--black-color);
+    border-radius: 10px;
+    border: 1px solid var(--white-color);
+    display: grid;
+    place-content: center;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.bjarke__carrousel__carrousel__btn-avant {
+    left: 0;
+}
+
+.bjarke__carrousel__carrousel__btn-apres {
+    right: 0;
+}
