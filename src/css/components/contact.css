@@ -1,0 +1,32 @@
+.corps{
+    margin: 15px;
+}
+.formulaire{
+    font-family: Raleway;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 67px;
+    left: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.formulaire__nom{
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.formulaire__nom__texte{
+    font-family: Raleway;
+    font-style: semi-bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+.envoyer{
+    margin-left: 135px;
+}
