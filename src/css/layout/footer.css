@@ -25,7 +25,8 @@
     margin: auto;
     margin-top: 33px;
     text-decoration: none;
-    background-color: var(--green-color);
+    border: 2px solid var(--white-color); 
+    background-color: var(--black-color);
     border-radius: 100px; 
     color: var(--white-color);
     text-align: center;
