@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+main{
+  background-color: var(--background-color);
+}
+
 h1{
   font-weight: normal;
   font-size: var(--heading-1);
@@ -24,4 +28,10 @@ p{
   font-weight: normal;
   font-size: var(--text);
   line-height: 1.6;
+}
+
+figcaption{
+  font-weight: normal;
+  font-size: var(--legend);
+  font-style: italic;
 }

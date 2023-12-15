@@ -21,7 +21,7 @@
 
 .accueil__introduction{
     position: relative;
-    top: 130px;
+    top: 135px;
     background-color: var(--black-color);
     color: var(--white-color);
 }
@@ -232,12 +232,12 @@
   
   .accueil__realisations__presentation--liste li {
     display: inline-block;
-    width: 170px;
-    height: 119px;
+    width: auto;
+    max-width: 100%;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: top; 
-    margin-bottom: 75px;
+    margin-bottom: 55px;
   }
   
 .accueil__realisations__presentation--liste figure {
@@ -266,7 +266,7 @@
     margin: 5px;
     cursor: pointer;
     width: 200px;
-    margin-bottom: 26px;
+    margin-bottom: 75px;
 }
 
 
