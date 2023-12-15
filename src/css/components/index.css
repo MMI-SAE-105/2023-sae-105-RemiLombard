@@ -123,6 +123,111 @@
     max-width: 100%;
 }
 
+.vignette__image{
+    position: absolute;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.vignette__description{
+    position: absolute;
+    top: 275px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    box-sizing: border-box;
+}
+
+.vignette__description--titre{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.vignette__description--line{
+    display: block;
+    margin: auto;    
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.vignette__description--paragraphe{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-size: var(--text);
+    line-height: 1.6;
+}
+
+.vignette__descriptionbtn--btn{
+    text-align: right;
+    margin-right: 10px; 
+    padding: 0; 
+}
+
+.vignette__description--btn{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--green-color);
+    border-radius: 100px; 
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 8px 12px; 
+    margin: 5px;
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 26px;
+    }
+
+.accueil__realisations{
+    position: relative;
+    top: 235px;
+    z-index: 2;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.accueil__realisations__titre{
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+    font-family: var(--font-family-2);
+    font-size: var(--heading-1);
+    margin-bottom: 10px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.accueil__realisations__titre--line{
+    width: 800px;
+    max-width: 100%;
+}
+
+.accueil__realisations--texte{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    z-index: 2;
+    font-family: var(--font-family-2);
+    font-size: var(--heading-2);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    margin-bottom: 40px;
+}
+
+
+
+
+
 
     
 
