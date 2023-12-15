@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,9 +17,26 @@
                 <img src="public/icones/Home.svg" alt="icone accueil">
             </a>
             <img src="public/icones/L’odyssée d’Ingels.svg" alt="logo du site web" class="header__elements--logo">
-            <button class="header__elements--menu">
+            <button class="header__elements--menu"
+            aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">>
                 <img src="public/icones/mingcute_menu-line.svg" alt="icone menu">
             </button>
+
+            <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/frank.html">Bjarke Ingels</a></li>
+            <li class="text_menu"><a href="/fr/creations.html">Liste des réalisations</a></li>
+            <li class="text_menu"><a href="/fr/infos.html">Tarifs</a></li>
+            <li class="text_menu"><a href="/fr/contact.html">Horaires</a></li>
+        </ul>
+    </nav>
         </div>
     </header>
 
