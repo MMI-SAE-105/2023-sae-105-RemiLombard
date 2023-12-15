@@ -5,12 +5,11 @@
     --green-color: #4AC248;
     --blue-color: #70A0FF;
 
-    --title: 1.813rem;
-    --heading-1: 1.875rem;
-    --heading-2: 1.25rem;
-    --heading-3: 1rem;
-    --legend: 0.75rem;
-    --text: 0.875rem;
+    --heading-1: 24px;
+    --heading-2: 15px;
+    --heading-3: 11px;
+    --legend: 14px;
+    --text: 14px;
 
     --space0x: 5px;
     --space1x: 10px;

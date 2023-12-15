@@ -1,3 +1,7 @@
+.accueil{
+    background-color: var(--background-color);
+}
+
 .accueil__fondation--image{
     position: absolute;
     z-index: 1;
@@ -10,12 +14,27 @@
     z-index: 2;
     font-family: var(--font-family);
     font-style: italic;
+    font-size: var(--legend);
     top: 3px;
 }
 
 .accueil__introduction{
     position: relative;
     top: 130px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.accueil__introduction__top{
+    display: flex;
+    margin-left: 10px;
+    font-family: var(--font-family-2);
+    font-size: var(--heading-1);
+}
+
+.accueil__introduction__top--line{
+    margin-left: 20px;
+    width: 800px;
 }
 
 .accueil__introduction--design{
@@ -24,4 +43,22 @@
     width: 800px;
     max-width: 100%;
 }
+
+.accueil__introduction__concept--question{
+    display: flex;
+    margin-left: 10px;
+    font-family: var(--font-family-2);
+    font-size: var(--heading-2);
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.accueil__introduction__concept--texte{
+    font-family: var(--font-family);
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+
 
