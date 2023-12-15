@@ -5,10 +5,10 @@
     --green-color: #4AC248;
     --blue-color: #70A0FF;
 
-    --heading-1: 24px;
-    --heading-2: 15px;
-    --heading-3: 11px;
-    --legend: 14px;
+    --heading-1: 30px;
+    --heading-2: 20px;
+    --heading-3: 16px;
+    --legend: 12px;
     --text: 14px;
 
     --space0x: 5px;
@@ -19,7 +19,7 @@
     --space5x: 50px;
 
     --font-family: 'Lato', sans-serif;
-    --font-family-2: 'Gabriela', serif;
+    --font-family-2: 'kadwa', serif;
     --font-family-3: 'Saira Stencil One', cursive;
 
 }
