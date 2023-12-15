@@ -236,13 +236,38 @@
     height: 119px;
     margin-left: 10px;
     margin-right: 10px;
-    vertical-align: top; /* Alignement vertical au sommet pour aligner les images */
+    vertical-align: top; 
+    margin-bottom: 75px;
   }
   
-  /* Facultatif : pour s'assurer que les figures ne dépassent pas la largeur de leur conteneur */
-  .accueil__realisations__presentation--liste figure {
+.accueil__realisations__presentation--liste figure {
     max-width: 100%;
   }
+
+.accueil__realisations__presentation--liste figure img {
+    border-radius: 10px;
+}
+
+.accueil__realisations__btn{
+    text-align: right;
+    margin-right: 10px; 
+    padding: 0; 
+}
+
+.accueil__realisations__btn--btn{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--green-color);
+    border-radius: 100px; 
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 8px 12px; 
+    margin: 5px;
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 26px;
+}
 
 
 
